@@ -34,6 +34,9 @@ The project emphasizes not just *whether* a model flags a transaction, but also:
 
 > **Important:** This project uses synthetic transaction data. Its results demonstrate an experimental workflow and must not be interpreted as guaranteed performance on real banking transactions.
 
+## Dashboard
+![Dashboard](docs/dashboard.png)
+
 ## 🎯 Project Objectives
 
 - Build a reproducible transaction fraud analysis workflow.
@@ -509,7 +512,7 @@ Software Engineer | Data Science | Machine Learning | Explainable AI
 
 
 
-LinkedIn: [!](https://www.linkedin.com/in/rauof-qadir-a68a25338/?isSelfProfile=true)
+ [LinkedIn](https://www.linkedin.com/in/rauof-qadir-a68a25338/?isSelfProfile=true)
 
 ---
 
