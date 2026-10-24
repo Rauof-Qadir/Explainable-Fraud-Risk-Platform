@@ -1,0 +1,41 @@
+
+project:
+  name: explainable-fraud-risk-platform
+  version: "0.1.0"
+
+data:
+  path: data/raw/transactions.csv
+  target: isFraud
+  time_column: step
+
+prediction:
+  decision_stage: pre_transaction
+  target_description: "Predict whether a transaction is fraudulent"
+
+features:
+  categorical:
+    - type
+
+  numeric:
+    - amount
+    - oldbalanceOrg
+    - oldbalanceDest
+
+  excluded:
+    - isFraud
+    - isFlaggedFraud
+    - nameOrig
+    - nameDest
+    - newbalanceOrig
+    - newbalanceDest
+
+evaluation:
+  split_strategy: temporal
+  train_fraction: 0.70
+  validation_fraction: 0.15
+  test_fraction: 0.15
+  random_seed: 42
+
+business:
+  false_positive_cost: 5
+  false_negative_cost: 150
