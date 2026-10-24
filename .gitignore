@@ -17,3 +17,5 @@ models/*
 
 reports/*
 !reports/.gitkeep
+
+!reports/data_audit.json

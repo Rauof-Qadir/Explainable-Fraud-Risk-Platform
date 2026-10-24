@@ -1,0 +1,112 @@
+{
+  "file": "data\\raw\\transactions.csv",
+  "total_rows": 6362620,
+  "total_columns": 11,
+  "columns": [
+    "step",
+    "type",
+    "amount",
+    "nameOrig",
+    "oldbalanceOrg",
+    "newbalanceOrig",
+    "nameDest",
+    "oldbalanceDest",
+    "newbalanceDest",
+    "isFraud",
+    "isFlaggedFraud"
+  ],
+  "missing_required_columns": [],
+  "unexpected_columns": [],
+  "chunks_processed": 32,
+  "chunk_size": 200000,
+  "missing_counts": {
+    "step": 0,
+    "type": 0,
+    "amount": 0,
+    "nameOrig": 0,
+    "oldbalanceOrg": 0,
+    "newbalanceOrig": 0,
+    "nameDest": 0,
+    "oldbalanceDest": 0,
+    "newbalanceDest": 0,
+    "isFraud": 0,
+    "isFlaggedFraud": 0
+  },
+  "fraud_label_counts": {
+    "0": 6354407,
+    "1": 8213
+  },
+  "transaction_type_counts": {
+    "PAYMENT": 2151495,
+    "CASH_OUT": 2237500,
+    "CASH_IN": 1399284,
+    "TRANSFER": 532909,
+    "DEBIT": 41432
+  },
+  "invalid_isFraud_labels": 0,
+  "invalid_isFlaggedFraud_labels": 0,
+  "duplicate_rows_within_chunks_only": 0,
+  "numeric_statistics": {
+    "step": {
+      "min": 1.0,
+      "max": 743.0,
+      "negative_count": 0,
+      "zero_count": 0,
+      "non_finite_count": 0
+    },
+    "amount": {
+      "min": 0.0,
+      "max": 92445516.64,
+      "negative_count": 0,
+      "zero_count": 16,
+      "non_finite_count": 0
+    },
+    "oldbalanceOrg": {
+      "min": 0.0,
+      "max": 59585040.37,
+      "negative_count": 0,
+      "zero_count": 2102449,
+      "non_finite_count": 0
+    },
+    "newbalanceOrig": {
+      "min": 0.0,
+      "max": 49585040.37,
+      "negative_count": 0,
+      "zero_count": 3609566,
+      "non_finite_count": 0
+    },
+    "oldbalanceDest": {
+      "min": 0.0,
+      "max": 356015889.35,
+      "negative_count": 0,
+      "zero_count": 2704388,
+      "non_finite_count": 0
+    },
+    "newbalanceDest": {
+      "min": 0.0,
+      "max": 356179278.92,
+      "negative_count": 0,
+      "zero_count": 2439433,
+      "non_finite_count": 0
+    },
+    "isFraud": {
+      "min": 0.0,
+      "max": 1.0,
+      "negative_count": 0,
+      "zero_count": 6354407,
+      "non_finite_count": 0
+    },
+    "isFlaggedFraud": {
+      "min": 0.0,
+      "max": 1.0,
+      "negative_count": 0,
+      "zero_count": 6362604,
+      "non_finite_count": 0
+    }
+  },
+  "limitations": [
+    "Duplicate check only covers rows within each chunk.",
+    "Missing values are counted, but invalid numeric parsing and infinities require separate review.",
+    "Negative values are flagged for investigation, not automatically deleted."
+  ]
+}
